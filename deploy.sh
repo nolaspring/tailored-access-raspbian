@@ -1,3 +1,5 @@
+#!/bin/bash
+
 TARGET_ROOT=$1
 sudo cp -rf config.txt $TARGET_ROOT/boot/config.txt
 sudo cp ./usr/cmdline.txt $TARGET_ROOT/boot/
