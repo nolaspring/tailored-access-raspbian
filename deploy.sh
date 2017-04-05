@@ -5,10 +5,10 @@ if [ -z "$1" ]; then
   exit
 fi
 
-if [ -z "$2" && -z $3""]; then
+if [ -z "$2" && -z "$3"]; then
   echo "Provide ssid and wpa passphrase as arguments 2 and 3"
   echo "deploy.sh [TARGET_ROOT] [SSID] [WPA_PASSPHRASE]"
-  exit 
+  exit
 fi
 
 TARGET_ROOT=$1
