@@ -12,5 +12,5 @@ sudo cp -rf ./99-fbturbo.conf $TARGET_ROOT/linux/usr/share/X11/xorg.conf.d/99-fb
 sudo mkdir $TARGET_ROOT/linux/etc/X11/xorg.conf.d
 sudo cp -rf ./usr/99-calibration.conf-5 $TARGET_ROOT/linux/etc/X11/xorg.conf.d/99-calibration.conf
 
-sudo cp usr/tft9341-overlay.dtb
-sudo cp usr/tft35a-overlay.dtb
+sudo cp ./usr/tft9341-overlay.dtb /boot/overlays
+sudo cp ./usr/tft35a-overlay.dtb /boot/overlays
