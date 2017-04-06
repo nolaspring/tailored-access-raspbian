@@ -21,10 +21,9 @@ sudo cp ./cmdline.txt $TARGET_ROOT/boot/
 sudo cp ./modules $TARGET_ROOT/linux/etc/modules-load.d/
 #depricated - sudo cp ./usr/inittab /etc/
 sudo rm -rf $TARGET_ROOT/linux/etc/X11/xorg.conf.d
-
-sudo cp -rf ./99-fbturbo.conf $TARGET_ROOT/linux/usr/share/X11/xorg.conf.d/99-fbturbo.conf
 sudo mkdir $TARGET_ROOT/linux/etc/X11/xorg.conf.d
-sudo cp -rf ./99-calibration.conf $TARGET_ROOT/linux/etc/X11/xorg.conf.d/99-calibration.conf
+sudo cp ./99-fbturbo.conf $TARGET_ROOT/linux/usr/share/X11/xorg.conf.d/99-fbturbo.conf
+sudo cp ./99-calibration.conf $TARGET_ROOT/linux/etc/X11/xorg.conf.d/99-calibration.conf
 
 # sudo touch /raspbian/linux/etc/wpa_supplicant/wpa_supplicant.conf
 # sudo wpa_passphrase where_are_my_paaaaants the_casa_again >> /raspbian/linux/etc/wpa_supplicant/wpa_supplicant.conf
