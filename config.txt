@@ -11,8 +11,8 @@
 
 # uncomment the following to adjust overscan. Use positive numbers if console
 # goes off screen, and negative if there is too much border
-overscan_left=-16
-overscan_right=-16
+#overscan_left=-16
+#overscan_right=-16
 #overscan_top=-3
 #overscan_bottom=-3
 
@@ -51,10 +51,11 @@ enable_uart=1
 
 # Additional overlays and parameters are documented /boot/overlays/README
 
+
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=on
 hdmi_group=2
 hdmi_mode=1
 hdmi_mode=87
 hdmi_cvt 800 480 60 6 0 0 0
-dtoverlay=ads7846,cs=1,penirq=25,penirq_pull=2,speed=50000,keep_vref_on=0,swapxy=0,pmax=255,xohms=150,xmin=200,xmax=3900,ymin=200,ymax=3900
+dtoverlay=ads7846,cs=1,penirq=25,penirq_pull=2,speed=50000,keep_vref_on=0,swapxy=0,pmax=255,xohms=150,xmin=140,xmax=3951,ymin=261,ymax=3998
