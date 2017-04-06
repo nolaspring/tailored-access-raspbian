@@ -58,4 +58,6 @@ hdmi_group=2
 hdmi_mode=1
 hdmi_mode=87
 hdmi_cvt 800 480 60 6 0 0 0
-dtoverlay=ads7846,cs=1,penirq=25,penirq_pull=2,speed=50000,keep_vref_on=0,swapxy=0,pmax=255,xohms=150,xmin=0,xmax=3951,ymin=0,ymax=3998 
+dtparam=i2c_arm=on
+dtparam=spi=on
+dtoverlay=ads7846,penirq=25,speed=10000,penirq_pull=2,xohms=150
