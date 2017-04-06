@@ -31,7 +31,7 @@ sudo cp -rf ./99-calibration.conf $TARGET_ROOT/linux/etc/X11/xorg.conf.d/99-cali
 
 sudo cp $DRIVER_ROOT/tft9341-overlay.dtb $TARGET_ROOT/boot/overlays
 sudo cp $DRIVER_ROOT/tft35a-overlay.dtb $TARGET_ROOT/boot/overlays
-sudo cp /raspbian/xtensions/LCD-show/xinput-calibrator_0.7.5-1_armhf.deb $TARGET_ROOT/home/pi
+sudo cp /raspbian/xtensions/LCD-show/xinput-calibrator_0.7.5-1_armhf.deb $TARGET_ROOT/linux/home/pi
 
 
 
