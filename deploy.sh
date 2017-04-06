@@ -20,8 +20,9 @@ sudo cp  ./config.txt $TARGET_ROOT/boot/config.txt
 sudo cp ./cmdline.txt $TARGET_ROOT/boot/
 sudo cp ./modules $TARGET_ROOT/linux/etc/modules-load.d/
 #depricated - sudo cp ./usr/inittab /etc/
-sudo cp -rf ./99-fbturbo.conf $TARGET_ROOT/linux/usr/share/X11/xorg.conf.d/99-fbturbo.conf
 sudo rm -rf $TARGET_ROOT/linux/etc/X11/xorg.conf.d
+
+sudo cp -rf ./99-fbturbo.conf $TARGET_ROOT/linux/usr/share/X11/xorg.conf.d/99-fbturbo.conf
 sudo mkdir $TARGET_ROOT/linux/etc/X11/xorg.conf.d
 sudo cp -rf ./99-calibration.conf $TARGET_ROOT/linux/etc/X11/xorg.conf.d/99-calibration.conf
 
