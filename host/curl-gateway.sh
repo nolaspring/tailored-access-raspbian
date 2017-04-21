@@ -6,7 +6,7 @@ mkdir ./.artifacts
 #collect artifacts
 sudo cat ./LCD-show/get-artifacts.sh | bash
 #install artifacts
-sudo cat .artifacts/LCD-show/LCD35-show | bash
+sudo cat ./LCD-show/install.sh | bash
 #cleanup artifact installation folders
 rm -rf ./.artifacts
 
