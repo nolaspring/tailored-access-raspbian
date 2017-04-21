@@ -1,4 +1,4 @@
-#!/bin-bash -v
+#!/bin/bash -v
 
 
 #get artifacts that need installing
@@ -18,7 +18,7 @@ rm -rf ./artifacts
 
 
 #reboot (wait if asked)
-sudo reboot
+#sudo reboot
 
 
 #set up validation hook
