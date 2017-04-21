@@ -4,14 +4,14 @@ echo 'current working folder '$(pwd)
 #get artifacts that need installing
 mkdir ./.artifacts
 #collect artifacts
-sudo cat ./LCD-show/get-artifacts.sh | bash
+sudo ./LCD-show/get-artifacts.sh
 #install artifacts
-sudo cat ./LCD-show/install.sh | bash
+sudo ./LCD-show/install.sh
 #cleanup artifact installation folders
 rm -rf ./.artifacts
 
 #configure services
-sudo cat ./wifi/configure.sh | bash
+sudo ./wifi/configure.sh
 
 
 #reboot (wait if asked)
