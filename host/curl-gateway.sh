@@ -1,16 +1,12 @@
-#!/bin/bash -v
-
-echo 'curl gateway'
-echo 'current working folder'$(pwd)
+#!/bin/bash -vecho 'curl gateway'
+echo 'current working folder '$(pwd)
 #get artifacts that need installing
 mkdir ./artifacts
 #collect artifacts
-./LCD-show/get-arifacts.sh
+sudo ./LCD-show/get-arifacts.sh
 #install artifacts
-./LCD-show/LCD35-show
-
+sudo .artifacts/LCD-show/LCD35-show
 #cleanup artifact installation folders
-popd
 rm -rf ./artifacts
 
 #configure services
