@@ -1,4 +1,5 @@
-#!/bin/bash -vecho 'curl gateway'
+#!/bin/bash -v
+echo 'curl gateway'
 echo 'current working folder '$(pwd)
 #get artifacts that need installing
 mkdir ./.artifacts
