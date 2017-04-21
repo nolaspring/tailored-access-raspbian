@@ -1,8 +1,0 @@
-must accept a variable in the command line as an argument
-must check to see if that value is -1
-must check to see if the value is a valid path
-must check to see if that path has a /linux and a /boot folder in .
-must validate that the files were written to disk via cat / compare
-must return a -1 if any test fails
-must write failure message to stdio
-must ensure it is completed in a single transaction
