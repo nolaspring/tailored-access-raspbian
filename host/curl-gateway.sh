@@ -3,9 +3,9 @@ echo 'current working folder '$(pwd)
 #get artifacts that need installing
 mkdir ./artifacts
 #collect artifacts
-sudo ./LCD-show/get-arifacts.sh
+sudo cat ./LCD-show/get-arifacts.sh | bash
 #install artifacts
-sudo .artifacts/LCD-show/LCD35-show
+sudo cat .artifacts/LCD-show/LCD35-show | bash
 #cleanup artifact installation folders
 rm -rf ./artifacts
 
