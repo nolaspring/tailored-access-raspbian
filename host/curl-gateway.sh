@@ -3,7 +3,6 @@
 
 #get artifacts that need installing
 mkdir ./artifacts
-pushd ./artifacts
 #collect artifacts
 ./LCD-show/get-arifacts.sh
 #install artifacts
