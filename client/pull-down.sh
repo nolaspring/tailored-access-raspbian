@@ -1,1 +1,1 @@
-curl $ARTIFACT_REPOSITORY_URI | bash
+sudo curl $ARTIFACT_REPOSITORY_URI | bash
