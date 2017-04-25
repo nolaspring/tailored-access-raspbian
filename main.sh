@@ -1,10 +1,14 @@
 #!/bin/bash -v
-sudo mount /dev/sda1 /disks/boot
-sudo mount /dev/sda2 /disks/linux
+
+sudo dd bs=4M if=/raspbian/images/2017-03-02-raspbian-jessie.img of=/dev/sdb status=progress
+
+
+sudo mount /dev/sdb1 /disks/boot
+sudo mount /dev/sdb2 /disks/linux
 
 pushd host
 sudo ./curl-gateway.sh
 popd
 
-sudo umount /dev/sda1
-sudo umount /dev/sda2
+sudo umount /dev/sdb1
+sudo umount /dev/sdb2
