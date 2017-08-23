@@ -1,0 +1,6 @@
+{}
+
+todo:  define telemetry node with some form of JSON, make it consumable by either
+chef-zero or bash, etc...
+
+use ohai as basis for defs, get those from the folks at fauhai
